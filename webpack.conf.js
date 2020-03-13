@@ -1,6 +1,6 @@
 // 配置文件使用commonjs规范
 module.exports = {
-    mode: "production",
+    mode: "production",// production   development
     // 入口，是一个对象
     entry: {
       app: './app.js'
@@ -12,6 +12,10 @@ module.exports = {
       // 带五位hash值的js
     //   filename: '[name].[hash:5].js'
       filename: '[name].js'
+    },
+    //优化配置
+    optimization: {
+      minimize: false
     },
  
     // 指定loader
